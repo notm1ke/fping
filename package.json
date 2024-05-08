@@ -1,6 +1,6 @@
 {
     "name": "fping",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Mike Medved",
     "license": "GPL-3.0",
     "description": "Node wrapper for fping",
