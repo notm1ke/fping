@@ -50,7 +50,7 @@ export default async (hosts: string[], timeout = 1500, backoff = 1.5, retry = 3,
                 return { host, alive: false };
             }
 
-            if (line.includes('nodename nor servname provided, or not known')) {
+            if (line.includes('nodename nor servname provided, or not known') || line.includes('Name or service not known')) {
                 let host = line.split(':')[0];
                 return { host, alive: false };
             }
